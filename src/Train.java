@@ -8,6 +8,13 @@ public class Train {
     private int totalSeats;
     private List<TrainRoute> routes;
     private int availableSeats;
+    private String journeyDate;
+    private String departureTime;
+    private String arrivalTime;
+    private String sourceStationName;
+    private String destinationStationName;
+    private double journeyDistance;
+    private String availableClasses;
 
     public Train() {
         this.routes = new ArrayList<>();
@@ -93,6 +100,62 @@ public class Train {
             return Math.abs(dstStop.getDistanceFromSource() - srcStop.getDistanceFromSource());
         }
         return 0.0;
+    }
+
+    public String getJourneyDate() {
+        return journeyDate;
+    }
+
+    public void setJourneyDate(String journeyDate) {
+        this.journeyDate = journeyDate;
+    }
+
+    public String getDepartureTime() {
+        return departureTime;
+    }
+
+    public void setDepartureTime(String departureTime) {
+        this.departureTime = departureTime;
+    }
+
+    public String getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public void setArrivalTime(String arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+
+    public String getSourceStationName() {
+        return sourceStationName;
+    }
+
+    public void setSourceStationName(String sourceStationName) {
+        this.sourceStationName = sourceStationName;
+    }
+
+    public String getDestinationStationName() {
+        return destinationStationName;
+    }
+
+    public void setDestinationStationName(String destinationStationName) {
+        this.destinationStationName = destinationStationName;
+    }
+
+    public double getJourneyDistance() {
+        return journeyDistance;
+    }
+
+    public void setJourneyDistance(double journeyDistance) {
+        this.journeyDistance = journeyDistance;
+    }
+
+    public String getAvailableClasses() {
+        return availableClasses;
+    }
+
+    public void setAvailableClasses(String availableClasses) {
+        this.availableClasses = availableClasses;
     }
 
     @Override

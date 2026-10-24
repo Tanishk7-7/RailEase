@@ -6,6 +6,8 @@ public interface TrainOperations {
 
     List<Train> searchTrains(int sourceStationId, int destinationStationId);
 
+    List<Train> searchTrains(int sourceStationId, int destinationStationId, String journeyDate);
+
     List<Station> getAllStations();
 
     List<TrainRoute> getRoutesForTrain(int trainId);
